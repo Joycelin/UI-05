@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-------------------------------------------*/
+.background{
+	background-color: #3885a7;
+	display: flex;
+	align-items: center;
+	width:100%;	
+	height: 100vh;
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.width1055{
+	width: 1055px;
+}
+.container{
+	padding:0;
+	box-shadow: 0 0 200px #666;
+
+}
+.row{
+	padding: 0;
+	margin: 0;
+}
+		/*------------------header------------------*/
+.header{
+	background-color: #fff;
+	height: 67px;
+	padding: 0 50px;
+
+}
+
+/*-----------main-menu------------------*/
+.main-menu::before{
+	content: '';
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.main-menu li{
+	display: inline-block;
+	margin-right:15px; 
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	padding-top: 5px;
+}
+.main-menu li:hover{
+	border-bottom: 2px solid #2a7ca1;
+}
+.main-menu a{
+	text-decoration: none;
+	color: #000;
+}
+.main-menu a:hover{
+	color: #2a7ca1;
+}
+
+/*----------user-tools-----------------*/
+/*----.user-tools::before{
+	content:'';
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}----*/
+.user-tools{
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 15px;
+}
+.user-tools li{
+	display: inline-block;
+}
+
+	/*-------------search-------------*/
+.search-input{
+	background-color: #e5e5e5;
+	-webkit-clip-path:polygon(0% 50%,10% 0%, 90% 0%, 100% 50%, 90% 100%,10% 100%);
+}
+.search-input input{
+	width: 150px;
+	height: 30px;
+	padding-left:20px; 
+	border:none;
+	background: none;
+}
+.search-input button{
+	border:none;
+	background: none;
+	margin-right: 20px;
+	color:#999999; 
+}
+	/*------------icon-------------*/
+.icon{
+	margin-right: 15px;
+}
+.cart button{
+	height: 30px;
+	width: 30px;
+	background-color: #3885a7;
+	border:none;
+	color: #fff;
+	font-size: 14px;
+	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+	/*-----------user-profile-------*/
+.user-profile{
+
+	height: 30px;
+	width: 30px;
+	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.user-profile img{
+	width: 100%;
+	height: 100%;
+}
+/*---------------content---------------*/
+.content{
+	background-color: #e6e6e6;
+}
+	/*------------filter---------------*/
+.filter{
+	margin: 0 350px;
+	text-transform: uppercase;
+}
+.filter li{
+	display: inline-block;
+	margin-right: 5px;
+	text-align: center;
+	margin-top: 25px;
+	padding-bottom: 5px;
+}
+.filter li:hover{
+	color: #2a7ca1;
+	border-bottom: 2px solid #2a7ca1;
+	cursor: pointer;
+}
+
+	/*----------products--------------*/
+.products ul{
+	padding:0 26px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.products li{
+	background-color: #fff;
+	margin: 30px 30px;
+	padding-bottom: 12px;
+	height: 330px;
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	text-transform: uppercase;
+}
+.products-hover{
+	background: 
+}
+.products li img{
+	width: 100%;
+}
+.products li p{
+	margin-left: 10px;
+	color: #2a7ca1;
+}
+/*-------------footer-----------------*/
+.footer{
+	text-align: center;
+}
+.footer button{
+	background-color: #3885a7;
+	width: 150px;
+	height: 40px;
+	-webkit-clip-path:polygon(0% 50%,10% 0%, 90% 0%, 100% 50%, 90% 100%,10% 100%);
+	color: #fff;
+	border:none;
+	margin-bottom: 20px;
+}
+
