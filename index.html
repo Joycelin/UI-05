@@ -1,97 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
 	<meta charset="UTF-8">
-	<title>UI-05-02</title>
+	<title>UI-05-03</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="./css/UI-05-02-style.css">
+	<script type="text/javascript" src="./js/UI-05-03.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/UI-05-03-style.css">
+	<link rel="stylesheet" type="text/css" href="./RWD/RWD-ui-05-03.css">
 </head>
 <body>
-	<div class="wrap background">
-		<div class="container width1055">
-			<div class="header">
-				<div class="row">
-					<div class="main-menu col-md-7">
+	<div class="wrap">
+		<div class="container">
+			<div class="navbar-header">
+					<button class="toggle-icon">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+			</div><!--navbar-header-->
+			<nav class="navbar">
+				
+				<!--navbar-header content-->
+				<div class="main-menu">
+					<ul class="nav navbar-nav">
+						<li class="menu-list"><a href="#">hats</a></li>
+						<li class="menu-list"><a href="#">sunglasses</a></li>
+						<li class="menu-list"><a href="#">gloves</a></li>
+						<li class="menu-list"><a href="#">bags</a></li>
+					</ul>		
+						<!--min-width768px  none-->
+
+					<ul class="nav navbar-nav userform-none">
+						<li class="menu-list "><a href="#">cart</a></li>
+						<li class="menu-list "><a href="#">user</a></li>
+						<li class="menu-list search-input">
+							<input type="text" placeholder="Search">
+							<button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</li>
+					</ul>
+					<!--min-width768px  none-->
+					<form action="" class="narbar-form" role="search">
 						<ul>
-							<li><a href="#">hats</a></li>
-							<li><a href="#">sunglasseas</a></li>
-							<li><a href="#">gloves</a></li>
-							<li><a href="#">bags</a></li>
-						</ul>
-					</div>
-					<div class="user-tools col-md-5">
-						<ul>
-							<li class="icon search-input">
-								<input type="text" name="search-keywords" placeholder="Search">
-								<button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+							<li class="form-group search-area ">
+								<input type="text" name="search" placeholder="Search">
+								<button type="submit" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
 							</li>
-							<li class="icon cart">
-								<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+							<li class="form-group icon-btn">
+								<button type="button" class="cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
 							</li>
-							<li class="icon user-profile">
-								<buttin type="button"><img src="./images/user.png" alt="user"></button>
+							<li class="form-group icon-btn">
+								<button type="button" class="user-profile"></button>
 							</li>
 						</ul>
-					</div>
-				</div>
-			</div>
+					</form>
+				</div><!--navbar-collpase-->
+
+			</nav>
 			<div class="content">
-				<div class="row">
-					<div class="filter  col-md-4">
-						<ul>
-							<li>all</li>
-							<li>new & rising</li>
-							<li>hot</li>
-							<li>random</li>
-						</ul>
-					</div>
+				<div class="filter">
+					<ul>
+						<li>all</li>
+						<li>new & rising</li>
+						<li>hot</li>
+						<li>random</li>
+					</ul>
 				</div>
-				<div class="row">
-					<div class="products">
+					<div class="product-area">
 						<ul>
-							<li class="col-md-3">
-								<img src="./images/Erika.jpg" alt="Erika">
-								<h2>Erika</h2>
-								<p>$119.95</p>
+							<li class="produt-items ">
+								<img src="./images/Aviator Gold.jpg" alt="Aviator Gold">
+								<h2 class="product-name">Aviator Gold</h2>
+								<p class="price">$199.95</p>
+								<div class="mask">
+									<h2 class="product-name">Aviator Gold</h2>
+									<p class="price">$199.95</p>
+									<button type="button" class="add-cart">Add to cart</button>
+								</div>
 							</li>
-							<li class="col-md-3">
-								<img src="./images/Justin.jpg" alt="Justin">
-								<h2>Justin</h2>
-								<p>$199.95</p>
-							</li>
-							<li class="col-md-3">		
-								<img src="./images/Coyote.jpg" alt="Coyote">
-								<h2>Coyote</h2>
-								<p>$39.95</p>
-							</li>
-							<li class="col-md-3">
+							<li class="produt-items">
 								<img src="./images/Aviator.jpg" alt="Aviator">
-								<h2>Aviator</h2>
-								<p>$199.95</p>
+								<h2 class="product-name">Aviator</h2>
+								<p class="price">$199.95</p>
+								<div class="mask">
+									<h2 class="product-name">Aviator</h2>
+									<p class="price">$199.95</p>
+									<button type="button" class="add-cart">Add to cart</button>
+								</div>
 							</li>
-							<li class="col-md-3">
+							<li class="produt-items">
 								<img src="./images/Clubmaster.jpg" alt="Clubmaster">
-								<h2>Clubmaster</h2>
-								<p>$149.95</p>
+								<h2 class="product-name">Clubmaster</h2>
+								<p class="price">$149.95</p>
+								<div class="mask">
+									<h2 class="product-name">Clubmaster</h2>
+									<p class="price">$149.95</p>
+									<button type="button" class="add-cart">Add to cart</button>
+								</div>
 							</li>
-							<li class="col-md-3">
+
+							<div class="clear"></div>
+
+							<li class="produt-items">
 								<img src="./images/Coyote.jpg" alt="Coyote">
-								<h2>Coyote</h2>
-								<p>$39.95</p>
+								<h2 class="product-name">Coyote</h2>
+								<p class="price">$39.95</p>
+								<div class="mask">
+									<h2 class="product-name">Coyote</h2>
+									<p class="price">$39.95</p>
+									<button type="button" class="add-cart">Add to cart</button>
+								</div>
 							</li>
+							<li class="produt-items">
+								<img src="./images/Erika.jpg" alt="Erika">
+								<h2 class="product-name">Erika</h2>
+								<p class="price">$119.95</p>
+								<div class="mask">
+									<h2 class="product-name">Erika</h2>
+									<p class="price">$119.95</p>
+									<button type="button" class="add-cart">Add to cart</button>
+								</div>
+							</li>
+							<li class="produt-items">
+								<img src="./images/Justin.jpg" alt="Justin">
+								<h2 class="product-name">Justin</h2>
+								<p class="price">$149.95</p>
+								<div class="mask">
+									<h2 class="product-name">Justin</h2>
+									<p class="price">$149.95</p>
+									<button type="button" class="add-cart">Add to cart</button>
+								</div>
+							</li>
+
+							<div class="clear"></div>
 						</ul>
 					</div>
-				</div>
-				<div class="footer">
-					<button type="button">Loading More</button>
-				</div>
+					<div class="footer">
+						<button type="button">Loading More</button>
+					</div>
 			</div>
-		</div>
+			
+		</div><!--container-->
 	</div>
 	
 </body>
