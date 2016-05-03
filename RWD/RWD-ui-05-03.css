@@ -104,4 +104,17 @@ table {
 	.produt-items img{
 		width: 100%;
 	}
+	.filter{
+		padding-top: 0;
+	}
+	.filter ul li{
+		display: block;
+		padding:15px 0;
+		border:1px solid #333;
+		cursor: pointer;
+	}
+	.filter ul li:hover{
+		background-color: #333;
+		color: #fff;
+	}
 }
