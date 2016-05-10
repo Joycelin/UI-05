@@ -124,6 +124,19 @@ table {
 	.products-item{
 		width: 100%;
 	}
+ 	.mask button{
+ 	-o-clip-path:polygon(0% 50%,10% 0%, 90% 0%, 100% 50%, 90% 100%,10% 100%);
+	-moz-clip-path:polygon(0% 50%,10% 0%, 90% 0%, 100% 50%, 90% 100%,10% 100%);
+	-webkit-clip-path:polygon(0% 50%,10% 0%, 90% 0%, 100% 50%, 90% 100%,10% 100%);
+	clip-path:polygon(0% 50%,10% 0%, 90% 0%, 100% 50%, 90% 100%,10% 100%);
 
+	border: none;
+
+	padding:3px 15px;
+
+	margin-top: 10px;
+
+	color: #000;
+ 	}
 	
 }
