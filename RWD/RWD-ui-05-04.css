@@ -124,6 +124,28 @@ table {
 	.products-item{
 		width: 100%;
 	}
+	.mask{
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	text-align: center;
+
+	color: #fff;
+
+	}
+	.mask h2 span{
+		display: block;
+		color: #fff;
+	}
  	.mask button{
  	-o-clip-path:polygon(0% 50%,10% 0%, 90% 0%, 100% 50%, 90% 100%,10% 100%);
 	-moz-clip-path:polygon(0% 50%,10% 0%, 90% 0%, 100% 50%, 90% 100%,10% 100%);
