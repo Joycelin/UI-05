@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
 	<meta charset="UTF-8">
-	<title>UI-05-03</title>
+	<title>UI-05-04</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -10,143 +10,155 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="./css/UI-05-03-style.css">
-	<link rel="stylesheet" type="text/css" href="./RWD/RWD-ui-05-03.css">
+	<link rel="stylesheet" type="text/css" href="./css/UI-05-04-style.css">
+	<link rel="stylesheet" type="text/css" href="./RWD/RWD-ui-05-04.css">
 </head>
 <body>
 	<div class="wrap">
-		<div class="container">
+		<div class="container width1055">
 			<div class="navbar-header">
-					<button class="toggle-icon">
-						<span class="sr-only"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-			</div><!--navbar-header-->
-			<nav class="navbar">
-				
-				<!--navbar-header content-->
-				<div class="main-menu">
-					<ul class="nav navbar-nav">
-						<li class="menu-list"><a href="#">hats</a></li>
-						<li class="menu-list"><a href="#">sunglasses</a></li>
-						<li class="menu-list"><a href="#">gloves</a></li>
-						<li class="menu-list"><a href="#">bags</a></li>
-					</ul>		
-						<!--min-width768px  none-->
+		        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		        </button>
+		        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#filter" aria-expanded="false">
+		        <i class="fa fa-filter" aria-hidden="true"></i>
+		        </button>
+		        
+	    	</div>
+	    	<div class="row">
+				<div class="header collapse navbar-collapse" id="header">
+					<div class="main-menu">
+						<div class="menu-list">
 
-					<ul class="nav navbar-nav userform-none">
-						<li class="menu-list "><a href="#">cart</a></li>
-						<li class="menu-list "><a href="#">user</a></li>
-						<li class="menu-list search-input">
-							<input type="text" placeholder="Search">
-							<button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-						</li>
-					</ul>
-					<!--min-width768px  none-->
-					<form action="" class="narbar-form" role="search">
-						<ul>
-							<li class="form-group search-area ">
-								<input type="text" name="search" placeholder="Search">
-								<button type="submit" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-							</li>
-							<li class="form-group icon-btn">
-								<button type="button" class="cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-							</li>
-							<li class="form-group icon-btn">
-								<button type="button" class="user-profile"></button>
-							</li>
-						</ul>
-					</form>
-				</div><!--navbar-collpase-->
+							<ul class="nav navbar-nav">
+								<li class="list search min-width768-none">
+									<input type="text" name="search" placeholder="Search">
+									<button type="submit" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i>
+									</button>
+								</li>
+								<li class="list min-width768-none">
+									<a href="#">your cart</a>
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</li>
+								<li class="list min-width768-none">
+									<a href="#">User name</a>
+								</li>
+								<li class="list"><a href="#">Hats</a></li>
+								<li class="list"><a href="#">Sunglasses</a></li>
+								<li class="list"><a href="#">Gloves</a></li>
+								<li class="list"><a href="#">Bags</a></li>
+								
+								
+							</ul>
+						</div>
 
-			</nav>
+						<div class="user-list max-width768-none">
+							<ul class="nav navbar-nav">
+								<li class="search">
+									<input type="text" name="search" placeholder="Search">
+									<button type="submit" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+								</li>
+								<li>
+									<button type="button" class="icon cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+								</li>
+								<li>
+									<button type="button" class="icon user-profile"></button>
+								</li>
+							</ul>
+						</div>
+					</div><!--main-menu-->
+				</div><!--header-->
+			</div><!--header row-->
 			<div class="content">
-				<div class="filter">
-					<ul>
-						<li>all</li>
-						<li>new & rising</li>
-						<li>hot</li>
-						<li>random</li>
+				<div class="filter collapse navbar-collapse" id="filter">
+					<ul class="nav ">
+						<li class="list"><a href="#">all</a></li>
+						<li class="list"><a href="#">new & rising</a></li>
+						<li class="list"><a href="#">hot</a></li>
+						<li class="list"><a href="#">random</a></li>
 					</ul>
+
+				</div><!--filter-->
+				<div class="clear"></div>
+				<div class="products-content">
+					<div class="products-item">
+						<div class="row">
+							<ul class="products-item-ul">
+								<li>
+									<img src="./images/Aviator Gold.jpg" alt="Aviator Gold">
+									<h2>Aviator Gold<span>$199.95</span></h2>
+
+									<div class="mask">
+										<h2>Aviator Gold<span>$199.95</span></h2>
+										<button>add to cart</button>
+									</div>
+									
+								</li>
+								<li>
+									<img src="./images/Aviator.jpg" alt="Aviator">
+									<h2>Aviator<span>$199.95</span></h2>
+									
+									<div class="mask">
+										<h2>Aviator<span>$199.95</span></h2>
+										<button>add to cart</button>
+									</div>
+								</li>
+								<li>
+									<img src="./images/Clubmaster.jpg" alt="Clubmaster">
+									<h2>Clubmaster<span>$495.95</span></h2>
+									
+									<div class="mask">
+										<h2>Clubmaster<span>$495.95</span></h2>
+										<button>add to cart</button>
+									</div>
+								</li>
+								<li>
+									<img src="./images/Coyote.jpg" alt="Coyote">
+									<h2>Coyote<span>$39.95</span></h2>
+									
+									<div class="mask">
+										<h2>Coyote<span>$39.95</span></h2>
+										<button>add to cart</button>
+									</div>
+								</li>
+								<li>
+									<img src="./images/Erika.jpg" alt="Erika">
+									<h2>Erika<span>$119.95</span></h2>
+									
+									<div class="mask">
+										<h2>Erika<span>$119.95</span></h2>
+										<button>add to cart</button>
+									</div>
+								</li>
+								<li>
+									<img src="./images/Justin.jpg" alt="Justin">
+									<h2>Justin<span>$149.95</span></h2>
+									
+									<div class="mask">
+										<h2>Justin<span>$149.95</span></h2>
+										<button>add to cart</button>
+									</div>
+								</li>
+								<div class="clear"></div>
+							</ul>
+						</div><!--products-item  row-->	
+						
+					</div>
 				</div>
-					<div class="product-area">
-						<ul>
-							<li class="produt-items ">
-								<img src="./images/Aviator Gold.jpg" alt="Aviator Gold">
-								<h2 class="product-name">Aviator Gold</h2>
-								<p class="price">$199.95</p>
-								<div class="mask">
-									<h2 class="product-name">Aviator Gold</h2>
-									<p class="price">$199.95</p>
-									<button type="button" class="add-cart">Add to cart</button>
-								</div>
-							</li>
-							<li class="produt-items">
-								<img src="./images/Aviator.jpg" alt="Aviator">
-								<h2 class="product-name">Aviator</h2>
-								<p class="price">$199.95</p>
-								<div class="mask">
-									<h2 class="product-name">Aviator</h2>
-									<p class="price">$199.95</p>
-									<button type="button" class="add-cart">Add to cart</button>
-								</div>
-							</li>
-							<li class="produt-items">
-								<img src="./images/Clubmaster.jpg" alt="Clubmaster">
-								<h2 class="product-name">Clubmaster</h2>
-								<p class="price">$149.95</p>
-								<div class="mask">
-									<h2 class="product-name">Clubmaster</h2>
-									<p class="price">$149.95</p>
-									<button type="button" class="add-cart">Add to cart</button>
-								</div>
-							</li>
-
-							<div class="clear"></div>
-
-							<li class="produt-items">
-								<img src="./images/Coyote.jpg" alt="Coyote">
-								<h2 class="product-name">Coyote</h2>
-								<p class="price">$39.95</p>
-								<div class="mask">
-									<h2 class="product-name">Coyote</h2>
-									<p class="price">$39.95</p>
-									<button type="button" class="add-cart">Add to cart</button>
-								</div>
-							</li>
-							<li class="produt-items">
-								<img src="./images/Erika.jpg" alt="Erika">
-								<h2 class="product-name">Erika</h2>
-								<p class="price">$119.95</p>
-								<div class="mask">
-									<h2 class="product-name">Erika</h2>
-									<p class="price">$119.95</p>
-									<button type="button" class="add-cart">Add to cart</button>
-								</div>
-							</li>
-							<li class="produt-items">
-								<img src="./images/Justin.jpg" alt="Justin">
-								<h2 class="product-name">Justin</h2>
-								<p class="price">$149.95</p>
-								<div class="mask">
-									<h2 class="product-name">Justin</h2>
-									<p class="price">$149.95</p>
-									<button type="button" class="add-cart">Add to cart</button>
-								</div>
-							</li>
-
-							<div class="clear"></div>
-						</ul>
-					</div>
-					<div class="footer">
-						<button type="button">Loading More</button>
-					</div>
-			</div>
-			
+				<div class="loading">
+					<button class="loading-btn">
+						Loading More
+					</button>
+				</div>
+			</div><!--content-->
 		</div><!--container-->
-	</div>
-	<script type="text/javascript" src="./js/UI-05-03.js"></script>
+	</div><!--wrap-->
+
+
+
+
 </body>
 </html>
